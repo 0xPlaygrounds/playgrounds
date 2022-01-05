@@ -1,0 +1,21 @@
+protocol: Klima
+token: KLIMA
+
+# Links
+website: https://klimadao.finance/
+docs: https://docs.klimadao.finance/
+
+# Top-Level Assets
+logo_asset: Klima_PG_trans_no_box.png
+
+# Colors
+nav_menu_color: "#00cc33"
+background_color: "#232b2b"
+
+staking:
+  staking_guide_asset:
+  extra_content_fn:
+
+bonding:
+  bonding_guide_asset:
+  extra_content_fn:

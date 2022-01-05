@@ -1,0 +1,22 @@
+protocol: Olympus
+token: OHM
+
+# Links
+website: https://olympusdao.finance/
+docs: https://docs.olympusdao.finance/
+
+# Top-Level Assets
+logo_asset: Olympus_PG_logo.png
+
+# Colors
+nav_menu_color: "#00aef2"
+background_color: "#6d2383"
+
+# App-Specific Config
+staking:
+  staking_guide_asset:
+  extra_content_fn:
+
+bonding:
+  bonding_guide_asset:
+  extra_content_fn:
