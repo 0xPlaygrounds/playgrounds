@@ -1,0 +1,13 @@
+ansi2html
+dash==2.0.0
+dash-bootstrap-components==1.0.0
+gunicorn
+lottie
+millify
+pandas==1.3.4
+requests
+retrying
+pycoingecko
+pytest
+pyyaml
+dash-extensions
