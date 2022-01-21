@@ -1,7 +1,21 @@
 # playgrounds
 Numerical simulation and learning environment for Olympus-style protocols
 
-## Background
+## Local Development with Docker
+
+To run a local development environment using Docker, follow these steps.
+
+1. `docker run -v $PWD:/usr/local/src -it -p 8050:8050 -w /usr/local/src python:3.9 bash`
+2. `pip install -r requirements.txt`
+3. `python index.py`
+
+You should now be able to access your local development version of the site at
+`http://localhost:8050`
+
+_NOTE: since your local copy of the code is mounted in the container,_
+_any changes will be automatically reflected when you reload the page._
+
+## Repo Structure
 
 Since all Olympus-style protocols share mostly the same fundamental mechanics,
 we are designing Playgrouds around a core set of common components with a standard,
@@ -35,7 +49,7 @@ Then you can reference config values using standard Python dictionary access syn
 protocol = config['protocol']
 ```
 
-## Dash Multipage Application
+### Dash Multipage Application
 
 Since the Playgrounds application contains multiple pages, we leverage Dash's
 support for multipage applications.
@@ -49,7 +63,7 @@ it to a specific URL. The corresponding URL must be linked from somewhere within
 the app, for instance within the `navbar.py` component to bring users to that
 page from the navigation bar.
 
-## Component Library
+### Component Library
 
 In order to reduce repetition, keep all code for each component in a single file,
 and keep file sizes reasonable, we separate out the layout and callbacks for each
