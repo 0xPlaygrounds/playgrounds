@@ -37,3 +37,5 @@ jobs:
           pip install -r requirements.txt
       - name: Run tests with pytest
         run: pytest
+      - name: Run smoketest
+        run: sh scripts/smoketest.sh
